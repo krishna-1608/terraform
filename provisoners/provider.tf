@@ -10,11 +10,11 @@ terraform {
     bucket = "remoto-state-terraform"
     key    = "provisoners-demo"
     region = "us-east-1"
-    use_lockfile = true
+    # use_lockfile = true
     encrypt = true
   }
 }
 
 provider "aws" {
-  # Configuration options
+  region = "us-east-1"
 }
